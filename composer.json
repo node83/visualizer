@@ -1,4 +1,16 @@
 {
+    "name": "node83/visualizer",
+    "description": "Database Structure Visualizer for MySQL using GraphViz",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alan Mcarlane",
+            "email": "alan.mcfarlane@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
     "autoload": {
         "psr-4": {
             "Visualizer\\": "src/"
