@@ -21,7 +21,7 @@ class Builder
      * @param int $flags
      * @return string
      */
-    public function build(string $schema, int $flags = Builder::INCLUDE_DEFAULTS + Builder::FULL_DATATYPES): string
+    public function build(string $schema, int $flags = Builder::INCLUDE_VIEWS + Builder::INCLUDE_DEFAULTS + Builder::FULL_DATATYPES): string
     {
         ob_start();
         $this->renderGraph($schema, $flags);

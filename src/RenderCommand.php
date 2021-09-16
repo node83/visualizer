@@ -36,7 +36,7 @@ class RenderCommand extends Command
 
         file_put_contents($dotfile, $builder->build($database));
 
-        $process = new Process(['dot', '-Tpng', '-o' . $pngfile, '-v', $dotfile]);
+        $process = new Process(['dot', '-Tpng', '-o', $pngfile, $dotfile]);
         $process->run();
 
         return $process->isSuccessful() ? Command::SUCCESS : Command::FAILURE;
