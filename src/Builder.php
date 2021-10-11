@@ -90,7 +90,7 @@ TEXT;
         $lsb   = "[";
         $color = $type === "view" ? "lightblue2": "palegreen2";
         $text  = <<<TEXT
-            |    $name {$lsb}shape=none, label=<
+            |    "$name" {$lsb}shape=none, label=<
             |        <table border="0" cellborder="1" cellspacing="0" cellpadding="3">
             |            <tr>
             |                <td align="center" bgcolor="$color" colspan="2">
@@ -167,7 +167,7 @@ TEXT;
                 $source = $key->source;
                 $target = $key->target;
 
-                echo "    $source -> $target;\n";
+                echo "    \"$source\" -> \"$target\";\n";
             }
 
             echo "\n";
